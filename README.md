@@ -1,8 +1,14 @@
-# Bot Template for DiscordGo
+# Standup and Go
 
-## A simple bot template to use for discord bots
-I spent some time trying to figure out DiscordGo so I made a template for future use. I made it for my own personal use but anyone is free to use it. Included is an example of how I setup a simple ping command that replies with a "pong". This can be easily extended to add other commands as needed.
+### A Discord Bot inspired by the Slack bot Standup and Prosper
+Created to help manage a capstone project for a university project. Features the standard commands to create, modify and delete standups in Discord channels. 
 
-### Files to look into for adding commands:
-./internal/command/command.go
-./config/commands.json
+### Commands
+| Command     | Description |
+| --------------- | ------------------------------------------------------------------ |
+| /create_standup | creates a new standup in the channel the command was used in       |      
+| /edit_standup   | edits an existing standup in the channel the command was used in   |
+| /delete_standup | deletes an existing standup in the channel the command was used in |
+
+## Deployment Methods
+A Dockerfile is provided but you can also directly build the binary.
